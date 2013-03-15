@@ -1,0 +1,103 @@
+<project>
+	<id>premier</id>
+	<name>premier</name>
+	<description></description>
+	<image>
+		<type>Image</type>
+		<url></url>
+		<mediaType>Image</mediaType>
+	</image>
+	<dataSets>
+		<resource>
+			<id>4e45dc3c-8594-4a96-9df1-7a6314ffec27</id>
+			<name>dataset</name>
+			<description>dataset</description>
+			<type>DataSet</type>
+			<mediaType>DataSet</mediaType>
+		</resource>
+		<resource>
+			<id>bf77955a-2cec-4fc3-b95d-7397025fb299</id>
+			<name>DataSet de test</name>
+			<description></description>
+			<type>DataSet</type>
+			<mediaType>DataSet</mediaType>
+		</resource>
+	</dataSets>
+	<status>ACTIVE</status>
+	<sitoolsAttachementForUsers>/proj/premier</sitoolsAttachementForUsers>
+	<modules>
+	    <projectModule>
+	      <id>DataSetExplorer</id>
+	      <name>DataSetExplorer</name>
+	      <description>Dataset Explorer</description>
+	      <author>akka</author>
+	      <version>1.0</version>
+	      <url>/sitools/client-user/js/components/dataSetExplorer/dataSetExplorer.json</url>
+	      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/dataset_explorer.png</imagePath>
+	      <title>title.DatasetExplorer</title>
+	      <defaultWidth>200</defaultWidth>
+	      <defaultHeight>500</defaultHeight>
+	      <x>0</x>
+	      <y>0</y>
+	      <icon>datasetExplorerModule</icon>
+	      <specificType>truc</specificType>
+	      <xtype>sitools.user.modules.datasetExplorer</xtype>
+	      <priority>0</priority>
+	      <visible>true</visible>
+	      <publicOpened>false</publicOpened>
+	      <listRoles>
+	        <role>
+	          <name>Administrator</name>
+	          <description>Administrator can create/access/modify/delete users and groups, associate them to roles, then authorizations, and globally manage informations.</description>
+	        </role>
+	      </listRoles>
+	    </projectModule>
+	    <projectModule>
+	      <id>4570d4e4-e5d1-4e7b-8ff4-9c3b400320cf</id>
+	      <name>projectDescription</name>
+	      <description>Show a Project Description</description>
+	      <author>Akka</author>
+	      <version>1.0</version>
+	      <url></url>
+	      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/description_project.png</imagePath>
+	      <title>project Description</title>
+	      <defaultWidth>800</defaultWidth>
+	      <defaultHeight>400</defaultHeight>
+	      <x>450</x>
+	      <y>0</y>
+	      <icon>projectDescriptionModule</icon>
+	      <specificType>projectDescription</specificType>
+	      <xtype>sitools.user.modules.projectDescription</xtype>
+	      <priority>1</priority>
+	      <visible>true</visible>
+	      <publicOpened>false</publicOpened>
+	      <listRoles>
+	        <role>
+	          <name>public</name>
+	          <description>a description of a public role</description>
+	        </role>
+	      </listRoles>
+	    </projectModule>
+	    <projectModule>
+	      <id>4570d4e4-e5d1-4e7b-8ff4-9c3b400320cf</id>
+	      <name>projectDescription</name>
+	      <description>Show a Project Description</description>
+	      <author>Akka</author>
+	      <version>1.0</version>
+	      <url></url>
+	      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/description_project.png</imagePath>
+	      <title>project Description</title>
+	      <defaultWidth>800</defaultWidth>
+	      <defaultHeight>400</defaultHeight>
+	      <x>450</x>
+	      <y>0</y>
+	      <icon>projectDescriptionModule</icon>
+	      <specificType>projectDescription</specificType>
+	      <xtype>sitools.user.modules.projectDescription</xtype>
+	      <priority>1</priority>
+	      <visible>true</visible>
+	      <publicOpened>false</publicOpened>
+	      <listRoles></listRoles>
+	    </projectModule>
+    </modules>
+</project>

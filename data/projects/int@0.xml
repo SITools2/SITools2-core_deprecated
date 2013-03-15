@@ -1,0 +1,344 @@
+<project>
+  <id>5132d85b-68e4-4e2b-a921-6fd7de5dc4ef</id>
+  <name>ExampleProject</name>
+  <description>short desc</description>
+  <image>
+    <type>Image</type>
+    <url>/sitools/res/images/logo_01_petiteTaille.jpg</url>
+    <mediaType>Image</mediaType>
+  </image>
+  <css>cnes</css>
+  <status>ACTIVE</status>
+  <sitoolsAttachementForUsers>/ExampleProject</sitoolsAttachementForUsers>
+  <visible>false</visible>
+  <authorized>false</authorized>
+  <modules>
+    <projectModule>
+      <id>DataSetExplorer</id>
+      <name>DataSetExplorer</name>
+      <description>Dataset Explorer</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url>/sitools/client-user/js/components/dataSetExplorer/dataSetExplorer.json</url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/dataset_explorer.png</imagePath>
+      <title>title.DatasetExplorer</title>
+      <defaultWidth>200</defaultWidth>
+      <defaultHeight>500</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>datasetExplorerModule</icon>
+      <specificType>truc</specificType>
+      <xtype>sitools.user.modules.datasetExplorer</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/dataSetExplorer/dataSetExplorer.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>0</priority>
+      <visible>true</visible>
+      <publicOpened>true</publicOpened>
+    </projectModule>
+    <projectModule>
+      <id>EspacePersonnel</id>
+      <name>EspacePersonnel</name>
+      <description>Espace Personnel</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url></url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/espace_utilisateur.png</imagePath>
+      <title>title.personalspace</title>
+      <defaultWidth>600</defaultWidth>
+      <defaultHeight>500</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>preferences</icon>
+      <specificType>EspacePersonnel</specificType>
+      <xtype>sitools.user.modules.userSpace</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/preference.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/order.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/viewOrder.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/orderProp.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/viewRecordSelectionDetail.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/svaTasks.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/svaTaskDetails.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/dependencies/tasks.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/userSpace/userSpace.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>1</priority>
+      <visible>true</visible>
+    </projectModule>
+    <projectModule>
+      <id>projectGraph</id>
+      <name>projectGraph</name>
+      <description>Project Graph</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url></url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/project_graph.png</imagePath>
+      <title>title.ProjectGraph</title>
+      <defaultWidth>800</defaultWidth>
+      <defaultHeight>500</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>graphModule</icon>
+      <specificType>projectGraph</specificType>
+      <xtype>sitools.user.modules.projectGraphTree</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/projectGraph/projectGraph.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>2</priority>
+      <visible>true</visible>
+      <publicOpened>false</publicOpened>
+    </projectModule>
+    <projectModule>
+      <id>formsModule</id>
+      <name>Forms</name>
+      <description>Forms Project</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url>/deprecated</url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/form_list.png</imagePath>
+      <title>title.formsModule</title>
+      <defaultWidth>740</defaultWidth>
+      <defaultHeight>480</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>formsModule</icon>
+      <specificType></specificType>
+      <xtype>sitools.user.modules.formsModule</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/formsModule/formsModule.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>3</priority>
+      <visible>true</visible>
+    </projectModule>
+    <projectModule>
+      <id>ProjectsFeeds</id>
+      <name>ProjectsFeeds</name>
+      <description>Feeds for Projects</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url>/deprecated</url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/project_feeds.png</imagePath>
+      <title>title.ProjectsFeeds</title>
+      <defaultWidth>400</defaultWidth>
+      <defaultHeight>500</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>feedsModule</icon>
+      <specificType>ProjectsFeeds</specificType>
+      <xtype>sitools.user.modules.feedsReaderProject</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/feedsReader/feedReaderProject.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>4</priority>
+      <visible>true</visible>
+    </projectModule>
+    <projectModule>
+      <id>4570d4e4-e5d1-4e7b-8ff4-9c3b400320cf</id>
+      <name>projectDescription</name>
+      <description>Show a Project Description</description>
+      <author>Akka</author>
+      <version>1.0</version>
+      <url></url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/description_project.png</imagePath>
+      <title>project Description</title>
+      <defaultWidth>800</defaultWidth>
+      <defaultHeight>400</defaultHeight>
+      <x>450</x>
+      <y>0</y>
+      <icon>projectDescriptionModule</icon>
+      <specificType>projectDescription</specificType>
+      <xtype>sitools.user.modules.projectDescription</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/projectDescription/projectDescription.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>5</priority>
+      <visible>true</visible>
+      <publicOpened>true</publicOpened>
+    </projectModule>
+    <projectModule>
+      <id>openSearchModule</id>
+      <name>OpenSearch</name>
+      <description>Project OpenSearch</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url>/deprecated</url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/open_search.png</imagePath>
+      <title>title.opensearch</title>
+      <defaultWidth>740</defaultWidth>
+      <defaultHeight>480</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>openSearchModule</icon>
+      <specificType></specificType>
+      <xtype>sitools.user.modules.openSearchModule</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/openSearchModule/openSearchModule.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>6</priority>
+      <visible>false</visible>
+      <publicOpened>false</publicOpened>
+    </projectModule>
+    <projectModule>
+      <id>helpWindow</id>
+      <name>Help window</name>
+      <description>Help window</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url></url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/help_gd.png</imagePath>
+      <title>title.help</title>
+      <defaultWidth>740</defaultWidth>
+      <defaultHeight>480</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>helpModule</icon>
+      <specificType></specificType>
+      <xtype>sitools.user.modules.help</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/client-user/js/modules/help/help.js</url>
+          </url>
+        </js>
+        <css/>
+      </dependencies>
+      <priority>7</priority>
+      <visible>true</visible>
+    </projectModule>
+    <projectModule>
+      <id>serverApplicationManager</id>
+      <name>Gestionnaire du bureau</name>
+      <description>Server Application Manager</description>
+      <author>akka</author>
+      <version>1.0</version>
+      <url></url>
+      <imagePath>/sitools/common/res/images/desktop/120x120_sans_cadre/desktop_manager.png</imagePath>
+      <title>title.DesktopManager</title>
+      <defaultWidth>740</defaultWidth>
+      <defaultHeight>480</defaultHeight>
+      <x>0</x>
+      <y>0</y>
+      <icon>desktopManagerModule</icon>
+      <specificType></specificType>
+      <xtype>sitools.user.modules.serverApplicationManager</xtype>
+      <dependencies>
+        <js>
+          <url>
+            <url>/sitools/common/js/components/commons/widgets/rowEditorGrid/Ext.ux.RowEditor.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/applicationManager/serverApplicationManager.js</url>
+          </url>
+          <url>
+            <url>/sitools/client-user/js/modules/applicationManager/dependencies/applicationManager.js</url>
+          </url>
+        </js>
+        <css>
+          <url>
+            <url>/sitools/common/js/components/commons/widgets/rowEditorGrid/RowEditor.css</url>
+          </url>
+        </css>
+      </dependencies>
+      <priority>8</priority>
+      <visible>true</visible>
+    </projectModule>
+  </modules>
+  <htmlHeader>&lt;div id=&quot;top-header&quot; style=&quot;background-color: black;&quot;&gt;
+&lt;a href=&quot;http://www.cnes.fr&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/sitools/common/res/images/cnes_black2.jpg&quot; style=&quot;border: none;&quot;&gt;
+&lt;/a&gt;
+&lt;/div&gt;</htmlHeader>
+  <htmlDescription>SITools2 est une plate-forme web conviviale permettant de mettre en place un 
+système de recherche et d&apos;accès aux données à partir d&apos;une ou plusieurs bases de 
+données existantes. SiTools2 permet de prendre en compte et de s&apos;adapter aux 
+structures de nombreuses bases de données qui sont gérées dans divers centres 
+scientifiques, et permet d&apos;éviter des processus lourds et complexes de migration 
+de données. 
+&lt;div class=&quot;field-items&quot;&gt;
+&lt;p&gt;L&apos;architecture de cette plate-forme est composée&amp;nbsp;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;d&apos;un serveur de données exposant des ressources,&amp;nbsp; 
+&lt;/li&gt;&lt;li&gt;d&apos;une interface web pour l&apos;administrateur permettant de configurer 
+l&apos;ensemble des fonctionnalités du serveur,&amp;nbsp; 
+&lt;/li&gt;&lt;li&gt;d&apos;une interface web pour les utilisateurs comportant un portail qui liste 
+les projets, avec un bureau pour chaque projet qui expose l&apos;ensemble des 
+services mis à disposition par l&apos;administrateur,&amp;nbsp; 
+&lt;/li&gt;&lt;li&gt;d&apos;un mécanisme de plugins permettant aux développeurs d&apos;ajouter des 
+fonctionnalités métiers aussi bien au niveau du serveur qu&apos;au niveau du client 
+et de les partager avec une communauté d&apos;utilisateurs.&amp;nbsp; &lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;SITools2 s&apos;articule autour de trois concepts importants&amp;nbsp;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;la source de données&amp;nbsp;: infrastructure contenant les données (actuellement 
+une base de données relationnelle accessible via l&apos;API JDBC), 
+&lt;/li&gt;&lt;li&gt;le jeu de données&amp;nbsp;: exposition d&apos;un sous-ensemble de la source de données 
+par l&apos;intermédiaire d&apos;un service web, 
+&lt;/li&gt;&lt;li&gt;le projet&amp;nbsp;: ensemble de jeux de données. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Des services peuvent être ensuite définis à partir de ces trois 
+concepts&amp;nbsp;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;définition et exposition du formulaire de recherche, 
+&lt;/li&gt;&lt;li&gt;définition et exposition de la recherche OpenSearch, 
+&lt;/li&gt;&lt;li&gt;définition et exposition des fonctions de conversion (unité, fonction de 
+transfert), 
+&lt;/li&gt;&lt;li&gt;définition et exposition des fonctions de filtrage, 
+&lt;/li&gt;&lt;li&gt;définition et exposition de dictionnaires de données, 
+&lt;/li&gt;&lt;li&gt;définition et exposition de flux RSS, 
+&lt;/li&gt;&lt;li&gt;définition et exposition des plugins. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Comme tout système d&apos;accès, il est important de pouvoir sécuriser l&apos;accès à 
+certaines ressources selon le profil de l&apos;utilisateur. C&apos;est pourquoi SITools2 
+implémente une gestion complète des utilisateurs (information personnalisable, 
+espace de stockage sur le serveur de données) et permet de sécuriser l&apos;ensemble 
+des ressources en fonction du rôle de chaque utilisateur.&lt;/p&gt;&lt;/div&gt;</htmlDescription>
+</project>
