@@ -278,7 +278,7 @@ public final class Starter {
     // ============================
     // Logs access
 
-    String logOutputFile = settings.getString("Starter.LogService.outputFile");
+    String logOutputFile = settings.getRootDirectory() + settings.getString("Starter.LogService.outputFile");
     String logLevelName = settings.getString("Starter.LogService.levelName");
     String logFormat = settings.getString("Starter.LogService.logFormat");
     String logName = settings.getString("Starter.LogService.logName");
