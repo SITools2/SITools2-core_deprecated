@@ -341,4 +341,5 @@ certaines ressources selon le profil de l&apos;utilisateur. C&apos;est pourquoi 
 implémente une gestion complète des utilisateurs (information personnalisable, 
 espace de stockage sur le serveur de données) et permet de sécuriser l&apos;ensemble 
 des ressources en fonction du rôle de chaque utilisateur.&lt;/p&gt;&lt;/div&gt;</htmlDescription>
+  <maintenance>false</maintenance>
 </project>
