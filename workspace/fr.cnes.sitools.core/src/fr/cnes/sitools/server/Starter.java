@@ -278,7 +278,7 @@ public final class Starter {
     // ============================
     // Logs access
 
-    String logOutputFile = settings.getString("Starter.LogService.outputFile");
+    String logOutputFile = settings.getRootDirectory() + settings.getString("Starter.LogService.outputFile");
     String logLevelName = settings.getString("Starter.LogService.levelName");
     String logFormat = settings.getString("Starter.LogService.logFormat");
     String logName = settings.getString("Starter.LogService.logName");
@@ -288,7 +288,7 @@ public final class Starter {
 
     component.setLogService(logService);
 
-    String appLogOutputFile = settings.getString("Starter.AppLogService.outputFile");
+    String appLogOutputFile = settings.getRootDirectory() + settings.getString("Starter.AppLogService.outputFile");
     String appLogLevelName = settings.getString("Starter.AppLogService.levelName");
     String appLogFormat = settings.getString("Starter.AppLogService.logFormat");
     String appLogName = settings.getString("Starter.AppLogService.logName");
