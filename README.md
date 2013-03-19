@@ -1,4 +1,4 @@
-test-core-2.0
+test-core-1.0
 =============
 
-Repository de test pour la version 2.0
+Repository de test pour la version 1.0
