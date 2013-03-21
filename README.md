@@ -1,8 +1,6 @@
-test-core-1.0
+core-v1
 =============
 
-Repository de test pour la version 1.0
+First version of the core components of SITools2
 
-ENcore un commit
 
-Commit trop puissant
