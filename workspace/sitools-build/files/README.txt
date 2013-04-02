@@ -15,7 +15,21 @@ Role/Function                        : Adaptable web interface for scientific da
 Reference tag                        : (1.0)
 
 2/ Changes
-
+___________________
+-R9S1 (2013-04-02)
+	* Bugs fixed : 
+		- Bad layout on project tree graph when column label is too long to be displayed
+		
+	* Enhancements : 
+		- During the dataset configuration, it's not possible to change the alias of a table anymore, all columns must be removed before
+		- Date validity is checked when submiting a form with a date between
+		- Project has been moved to GitHub (https://github.com/SITools2/core-v1)
+	
+	* API changes : 
+		- When querying the dataset record API, a 400 HTTP error code is returned 
+			* If a date is invalid 
+			* If a the dates in a date between filter are Inconsistent			 
+	
 ___________________
 -1.1 (2013-02-11)
 	* Bugs fixed : 
