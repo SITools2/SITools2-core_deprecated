@@ -26,6 +26,7 @@ import org.restlet.resource.Get;
 
 import com.thoughtworks.xstream.XStream;
 
+import fr.cnes.sitools.client.model.VersionBuildDateDTO;
 import fr.cnes.sitools.common.SitoolsResource;
 import fr.cnes.sitools.common.XStreamFactory;
 import fr.cnes.sitools.common.model.Response;
@@ -55,9 +56,13 @@ public final class SitoolsVersionResource extends SitoolsResource {
   @Get
   protected Representation get(Variant variant) {
     String version = getSitoolsSetting("Starter.VERSION");
+    String buildDate = getSitoolsSetting("Starter.BUILD_DATE");
 
-    Response resp = new Response(true, version, String.class, "version");
-    
+    VersionBuildDateDTO dto = new VersionBuildDateDTO();
+    dto.setVersion(version);
+    dto.setBuildDate(buildDate);
+
+    Response resp = new Response(true, dto, VersionBuildDateDTO.class, "info");
 
     return getRepresentation(resp, variant);
   }

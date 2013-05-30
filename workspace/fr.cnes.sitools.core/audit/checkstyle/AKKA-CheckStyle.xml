@@ -57,7 +57,7 @@
     <module name="DeclarationOrder"/>
     <module name="SuperFinalize"/>
     <module name="MultipleVariableDeclarations"/>
-    <module name="DoubleCheckedLocking"/>
+<!--    <module name="DoubleCheckedLocking"/>-->
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
     <module name="InnerAssignment"/>
@@ -69,7 +69,7 @@
     <module name="InnerAssignment"/>
     <module name="DefaultComesLast"/>
     <module name="MissingSwitchDefault"/>
-    <module name="RedundantThrows"/>
+    <!-- <module name="RedundantThrows"/>-->
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
     <module name="FinalClass"/>
