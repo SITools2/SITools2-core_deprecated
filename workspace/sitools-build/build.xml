@@ -50,11 +50,11 @@
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 	<target name="build" depends="init, export, izpack, javadoc, file-list, tar-gz, checksum" description="Création d'une distribution" />
 
-	<target name="build-git" depends="export-git-core, izpack, javadoc, file-list-git-core, tar-gz-core, checksum-core" description="Création d'une distribution" />
+	<target name="build-git" depends="init-git-core, export-git-core, izpack, javadoc, file-list-git-core, tar-gz-core, checksum-core" description="Création d'une distribution" />
 
-	<target name="build-git-ext-astro" depends="export-git-astro, file-list-git-astro, tar-gz-astro, checksum-astro" description="Création d'une distribution" />
+	<target name="build-git-ext-astro" depends="init-git-astro, export-git-astro, file-list-git-astro, tar-gz-astro, checksum-astro" description="Création d'une distribution" />
 
-	<target name="build-git-ext-earthObservation" depends="export-git-earthObservation, file-list-git-earthObservation, tar-gz-earthObservation, checksum-earthObservation" description="Création d'une distribution" />
+	<target name="build-git-ext-earthObservation" depends="init-git-earthObservation, export-git-earthObservation, file-list-git-earthObservation, tar-gz-earthObservation, checksum-earthObservation" description="Création d'une distribution" />
 
 
 	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -70,6 +70,29 @@
 		<mkdir dir="${distribution.dir}/workspace"/>
 	</target>
 
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			Target for init before export
+	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<target name="init-git" description="Initiatialisation de la creation de la distribution">
+		<echo message="preparing folders ..." />
+		<delete dir="${distribution.dir}" />
+	</target>
+
+	<target name="init-git-core" description="Initiatialisation de la creation de la distribution">
+		<antcall target="init-git">
+			<param name="dir" value="${distribution.dir}" />
+		</antcall>
+	</target>
+	<target name="init-git-astro" description="Initiatialisation de la creation de la distribution">
+		<antcall target="init-git">
+			<param name="dir" value="${distribution.astro.dir}" />
+		</antcall>
+	</target>
+	<target name="init-git-earthObservation" description="Initiatialisation de la creation de la distribution">
+		<antcall target="init-git">
+			<param name="dir" value="${distribution.earthObservation.dir}" />
+		</antcall>
+	</target>
 	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		Target for init before import/ Basicaly remove some files that we don't want to be commited
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
