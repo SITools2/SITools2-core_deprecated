@@ -419,6 +419,27 @@
 	</target>
 
 	<target name="izpack-compile" description="Generate izpack file : compile">
+		
+		
+		<subant  target="build-jars" buildpath="./tmp/workspace/sitools-install-izpack/">
+			<property name="ROOT_DIRECTORY_LOCAL" value="${sitools.ROOT_DIRECTORY}/workspace/sitools-build/tmp"/>
+		</subant>
+
+		<mkdir dir="bin/sitools-install-izpack"/>
+		<mkdir dir="bin/panels"/>
+				
+		<copy todir="bin/sitools-install-izpack">
+			<fileset dir="./tmp/workspace/sitools-install-izpack/bin/sitools-install-izpack">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+		
+		<copy todir="bin/panels">
+			<fileset dir="./tmp/workspace/sitools-install-izpack/bin/panels">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+		
 		<subant  target="build" buildpath="./tmp/workspace/sitools-install-izpack/">
 			<property name="ROOT_DIRECTORY_LOCAL" value="${sitools.ROOT_DIRECTORY}/workspace/sitools-build/tmp"/>
 			<property name="properties.Starter.VERSION" value="${sitools.project.tag}"/>
@@ -431,6 +452,7 @@
 				<include name="*.jar"/>
 			</fileset>
 		</copy>
+		<delete dir="bin"/>
 	</target>
 
 
