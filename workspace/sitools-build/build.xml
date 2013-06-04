@@ -421,12 +421,12 @@
 	<target name="izpack-compile" description="Generate izpack file : compile">
 		<subant  target="build" buildpath="./tmp/workspace/sitools-install-izpack/">
 			<property name="ROOT_DIRECTORY_LOCAL" value="${sitools.ROOT_DIRECTORY}/workspace/sitools-build/tmp"/>
-			<property name="properties.Starter.VERSION" value="${sitools.Version.tag}"/>
+			<property name="properties.Starter.VERSION" value="${sitools.project.tag}"/>
 		</subant>
 	</target>
 
 	<target name="izpack-finish" description="Generate izpack file : copy">
-		<copy todir="./files/">
+		<copy todir=".">
 			<fileset dir="./tmp/workspace/sitools-install-izpack/">
 				<include name="*.jar"/>
 			</fileset>
@@ -502,7 +502,6 @@
 			</fileset>
 		</path>
 		<property name="files" refid="list.files"/>
-		<echo message="${files}"/>
 		<pathconvert property="list" refid="list.files" pathsep="&#x0A;">
 			<mapper>
 				<globmapper from='${sitools.ROOT_DIRECTORY}/workspace/sitools-build/${dir}/*' to="*" handledirsep="true"/>
