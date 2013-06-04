@@ -447,7 +447,7 @@
 	</target>
 
 	<target name="izpack-finish" description="Generate izpack file : copy">
-		<copy todir=".">
+		<copy todir="${distribution.dir}">
 			<fileset dir="./tmp/workspace/sitools-install-izpack/">
 				<include name="*.jar"/>
 			</fileset>
