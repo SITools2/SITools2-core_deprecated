@@ -3,7 +3,7 @@ ______________
 
 Identification                       : SITools2
 Date                                 : 2013-04-02
-Version                              : 1.1.1
+Version                              : 1.2
 Owner                                : CNES
 Developer                            : AKKA Technologies
 Type                                 : Complete
@@ -15,6 +15,11 @@ Role/Function                        : Adaptable web interface for scientific da
 Reference tag                        : (1.0)
 
 2/ Changes
+
+___________________
+-1.2 (2013-06-03)
+	* Enhancements : 
+		- Project build date available in the Version window.
 ___________________
 -1.1.1 (2013-04-02)
 	* Bugs fixed : 
