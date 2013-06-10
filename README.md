@@ -11,11 +11,11 @@ Release notes : [README.txt](workspace/sitools-build/files/README.txt)
 
 ### Getting the sources
 
-	$ git clone https://github.com/SITools2/core-v2.git sitools2-v2
+	$ git clone https://github.com/SITools2/core-v1.git sitools2-v1
 	
 ### Pre-build configuration
 
-	$ cd sitools2-v2/workspace/fr.cnes.sitools.core
+	$ cd sitools2-v1/workspace/fr.cnes.sitools.core
 
 Edit `build.properties` and change the value of the `HOST` property (for example HOST = new-dev)
 
@@ -24,7 +24,7 @@ Make a copy of `conf/build/properties/build-example.properties` to `conf/build/p
 	$ cp conf/build/properties/build-example.properties conf/build/properties/build-new-dev.properties
 
 
-Edit the newly created file and set the `ROOT_DIRECTORY` property to the sitools2-v2 folder
+Edit the newly created file and set the `ROOT_DIRECTORY` property to the sitools2-v1 folder
 
 ### Build the sources
 
@@ -39,14 +39,14 @@ Build the sitools core using the instructions above
 
 ### Build the extensions
 
-	$ cd sitools2-v2/workspace/fr.cnes.sitools.extensions
+	$ cd sitools2-v1/workspace/fr.cnes.sitools.extensions
 	$ ant
 
 ### Build the installer
 
-	$ cd sitools2-v2/workspace/sitools-install-izpack	
+	$ cd sitools2-v1/workspace/sitools-install-izpack	
 
-Edit the `build.properties` file and update the `ROOT_DIRECTORY_LOCAL` with the value of the `sitools2-v2` folder path.
+Edit the `build.properties` file and update the `ROOT_DIRECTORY_LOCAL` with the value of the `sitools2-v1` folder path.
 
 Build the installer using ant
 
@@ -60,7 +60,7 @@ Build the installer using ant
 	$ sh sitools.sh start
 or 
 
-	$ ./sitools2-v2/workspace/fr.cnes.sitools.core/sitools start
+	$ ./sitools2-v1/workspace/fr.cnes.sitools.core/sitools start
 if `source` is not installed on your computer.
 
 ## Features
